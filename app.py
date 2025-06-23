@@ -42,8 +42,8 @@ def get_conversation_chain(vectorstore):
     # Utilise un modèle léger compatible avec pipeline HuggingFace
     hf_pipeline = pipeline(
         "text2text-generation",
-        model="google/flan-t5-base",
-        tokenizer="google/flan-t5-base",
+        model="google/flan-t5-small",
+        tokenizer="google/flan-t5-small",
         max_length=512,
         temperature=0.7
     )
